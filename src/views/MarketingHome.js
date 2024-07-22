@@ -41,12 +41,12 @@ const MarketingHome = () => {
                         <div className='flex flex-wrap items-center justify-around'>
 
                             <div className='md:px-6 px-3 text-gray-500 cursor-pointer hover:text-white transition duration-200 font-poppins md:text-sm text-xs'
-                                onClick={() => window.location.href = '/login'}
+                                onClick={() => window.location.href = process.env.REACT_APP_BASENAME + '/login'}
                             >Login</div>
 
                             <button
                                 className='md:block hidden linear md:w-[150px] w-[150px] text-sm md:text-base rounded-xl bg-brand-400 py-[12px] text-brand text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 font-poppins'
-                                onClick={() => window.location.href = '/auth/sign-up'}
+                                onClick={() => window.location.href = process.env.REACT_APP_BASENAME + '/auth/sign-up'}
                                 type='submit'
                             >
                                 Get Started Free
@@ -63,7 +63,7 @@ const MarketingHome = () => {
                                 <p className='font-mono text-white md:text-base text-sm'>Empowering Seamless Remote Management </p>
                                 <button
                                     className='mt-4 linear w-[150px] rounded-xl bg-brand-400 py-[12px] text-brand font-bold text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 font-poppin '
-                                    onClick={() => window.location.href = '/auth/sign-up'}
+                                    onClick={() => window.location.href = process.env.REACT_APP_BASENAME + '/auth/sign-up'}
                                     type='submit'
                                 >
                                     Go.
@@ -151,7 +151,7 @@ const MarketingHome = () => {
                             </div>
                             <button
                                 className='mt-8 linear w-[150px] rounded-xl bg-brand-400 py-[12px] text-brand font-bold text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 font-poppin '
-                                onClick={() => window.location.href = '/auth/sign-up'}
+                                onClick={() => window.location.href = process.env.REACT_APP_BASENAME + '/auth/sign-up'}
                                 type='submit'
                             >
                                 Connect.
@@ -228,7 +228,7 @@ const MarketingHome = () => {
                                 <p className='font-mono text-white text-center w-full md:text-base text-sm'>Say goodbye to the complexities of remote system management </p>
                                 <button
                                     className='mt-4 linear w-[150px] rounded-xl bg-brand-400 py-[12px] text-brand font-bold text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 font-poppin '
-                                    onClick={() => window.location.href = '/auth/sign-up'}
+                                    onClick={() => window.location.href = process.env.REACT_APP_BASENAME + '/auth/sign-up'}
                                     type='submit'
                                 >
                                     Get Started

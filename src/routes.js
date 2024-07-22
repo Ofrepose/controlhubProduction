@@ -23,7 +23,7 @@ const routes = [
   },
   {
     name: "Main Dashboard",
-    layout: "/admin",
+    layout:"/admin",
     path: "default",
     icon: <MdHome className="h-6 w-6" />,
     component: <MainDashboard />,

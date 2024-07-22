@@ -29,7 +29,7 @@ export default function SignUp() {
     <div className="flex flex-wrap content-center items-center sm:h-screen lg:h-full ">
       {/* Sign in section */}
       <div className="mt-[5vh] w-full max-w-full flex-col items-center md:pl-4 lg:pl-0 xl:max-w-[520px]">
-      <div className='flex items-end cursor-pointer' onClick={() => window.location.href = '/'} >
+      <div className='flex items-end cursor-pointer' onClick={() => window.location.href = process.env.REACT_APP_BASENAME} >
           <img
             src={ch2}
             alt="Logo"
@@ -127,7 +127,7 @@ export default function SignUp() {
             Already have an account?
           </span>
           <a
-            href="/auth/sign-in"
+            href={process.env.REACT_APP_BASENAME + "/auth/sign-in"}
             className="ml-1 text-sm font-medium text-brand-400 hover:text-brand-600 dark:text-white"
           >
             Sign In

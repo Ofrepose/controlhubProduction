@@ -21,12 +21,12 @@ const App = () => {
               reverseOrder={false}
             />
             <Routes>
-              <Route path="auth/*" element={<AuthLayout />} />
-              <Route path="admin/*" element={<AdminLayout />} />
-              <Route path="/signin" element={<Navigate to="/admin" replace />} />
-              <Route path="/login" element={<Navigate to="/admin" replace />} />
-              <Route path="/app" element={<Navigate to="/admin" replace />} />
-              <Route path="/" element={<MarketingHome />} />
+              <Route path={"auth/*"} element={<AuthLayout />} />
+              <Route path={"admin/*"} element={<AdminLayout />} />
+              <Route path={"/signin"} element={<Navigate to="/admin" replace />} />
+              <Route path={"/login"} element={<Navigate to="/admin" replace />} />
+              <Route path={"/app"} element={<Navigate to="/admin" replace />} />
+              <Route path={"/"} element={<MarketingHome />} />
             </Routes>
           </SystemProvider>
         </ProjectProvider>

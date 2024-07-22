@@ -22,8 +22,10 @@ export function AuthProvider({ children }) {
     if (storedUser) {
       setUser(JSON.parse(storedUser));
     } else {
-      if (window.location.pathname !== '/auth/sign-up' && !localStorage.getItem('token') && window.location.pathname !== '/') {
+      console.log(window.location.pathname)
+      if (window.location.pathname !== '/auth/sign-up' && !localStorage.getItem('token') && window.location.pathname !== process.env.REACT_APP_BASENAME + '/') {
         navigateToLogin();
+        
       }
     }
     setLoading(false);
