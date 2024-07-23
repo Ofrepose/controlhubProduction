@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL=/controlhubProduction/index.html" />
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+      var redirectTo = '/controlhubProduction/';
+      var path = window.location.pathname.replace('/controlhubProduction', '');
+      if (path.startsWith('/')) {
+        path = path.slice(1);
+      }
+      window.location.replace(redirectTo + '#' + path);
+    </script>
   </head>
   <body>
   </body>
